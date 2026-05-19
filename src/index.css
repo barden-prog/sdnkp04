@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= PRINT ================= */
+@media print {
+
+  @page{
+    size:A4 portrait;
+    margin:10mm;
+  }
+
+  body{
+    background:white !important;
+    font-family:Arial, sans-serif;
+    zoom:88%;
+    color:black !important;
+  }
+
+  button,
+  iframe,
+  footer,
+  .no-print{
+    display:none !important;
+  }
+
+  .print-container{
+    width:100% !important;
+    max-width:100% !important;
+    margin:0 auto !important;
+    padding:0 !important;
+    box-shadow:none !important;
+    border:none !important;
+  }
+
+  /* HEADER */
+  .header-print{
+    background:white !important;
+    color:black !important;
+    border-bottom:3px solid black;
+    padding-bottom:12px !important;
+    margin-bottom:15px !important;
+  }
+
+  .header-print h1{
+    font-size:24px !important;
+    text-align:center !important;
+    font-weight:900 !important;
+  }
+
+  .header-print p{
+    font-size:14px !important;
+    text-align:center !important;
+  }
+
+  /* SECTION TITLE */
+  .section-title{
+    background:#e5e7eb !important;
+    color:black !important;
+    border:1px solid black !important;
+    border-radius:0 !important;
+    padding:8px 12px !important;
+    margin-top:14px !important;
+    margin-bottom:10px !important;
+    box-shadow:none !important;
+  }
+
+  .section-title h2{
+    font-size:15px !important;
+    font-weight:bold !important;
+  }
+
+  /* CARD */
+  section{
+    background:white !important;
+    border:1px solid #999 !important;
+    padding:10px !important;
+    margin-bottom:10px !important;
+    break-inside:avoid;
+    box-shadow:none !important;
+  }
+
+  /* GRID */
+  .grid{
+    gap:10px !important;
+  }
+
+  /* LABEL */
+  label{
+    font-size:11px !important;
+    font-weight:bold !important;
+    margin-bottom:3px !important;
+    color:black !important;
+  }
+
+  /* INPUT */
+  input,
+  textarea,
+  select{
+    font-size:12px !important;
+    border:1px solid #555 !important;
+    border-radius:4px !important;
+    padding:6px 8px !important;
+    background:white !important;
+    color:black !important;
+  }
+
+  textarea{
+    height:70px !important;
+  }
+
+  h2{
+    font-size:16px !important;
+  }
+
+  h3{
+    font-size:14px !important;
+  }
+
+  .rounded-3xl,
+  .rounded-2xl{
+    border-radius:6px !important;
+  }
+
+  *{
+    box-shadow:none !important;
+  }
+
+  /* TTD */
+  .ttd-print{
+    margin-top:40px !important;
+    text-align:right !important;
+    font-size:12px !important;
+  }
+
+}
+@media print {
+  img {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
