@@ -13,7 +13,7 @@ export default function Pendaftar() {
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
-    fetch("http://localhost:8080/ppdb-api/pendaftar.php")
+    fetch("https://ppdbsdnkp04.infinityfreeapp.com/ppdb-api/pendaftar.php")
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP Error ${res.status}`);
         return res.json();
